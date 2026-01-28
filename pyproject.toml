@@ -1,0 +1,18 @@
+[project]
+name = "shcard-a2a"
+version = "0.1.0"
+description = "신한카드 A2A 멀티 에이전트 데모 - 거래내역 발송 및 카드 추천 서비스"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "a2a-sdk>=0.2.16",
+    "google-adk==1.15.1",
+    "gradio>=5.38.2",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
